@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dave's Simple Reverse Notation Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="CalcMain.css">
+    </head>
+    <body>
+        <script src="Calc1Operand.js" async defer></script>
+        <table width="100%">
+            <tr>
+                <td><input type="number" id="txtOperand" name="txtOperand"></td>
+            </tr>
+        </table>
+        <table width="100%">
+            <tr>
+                <td style="width: 33%;"><input type="button" value="1/x" onclick="Calc('1/x')" /></td>
+                <td><input type="button" value="Σ" onclick="Calc('Σ')" /></td>
+                <td><input type="button" value="!" onclick="Calc('!')" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="sin" onclick="Calc('sin')" /></td>
+                <td><input type="button" value="cos" onclick="Calc('cos')" /></td>
+                <td><input type="button" value="tan" onclick="Calc('tan')" /></td>
+            </tr>
+            <tr>
+                <td class="trig">DEG</td>
+                <td class="trig">RAD</td>
+                <td class="trig">GRD</td>
+            </tr>
+            <tr>
+                <td class="trig"><input type="radio" id="deg" name="circleMeasurement" value="DEG" checked></td>
+                <td class="trig"><input type="radio" id="rad" name="circleMeasurement" value="RAD"></td>
+                <td class="trig"><input type="radio" id="grd" name="circleMeasurement" value="GRD"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="button" value="C" onclick="Clear()" /></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="number" id="txtResult" name="txtResult" disabled /></td>
+            </tr>
+        </table>
+    </body>
+</html>
